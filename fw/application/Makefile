@@ -398,7 +398,10 @@ SRC_FILES += \
   $(U8G2_ROOT)/u8x8_string.c \
   $(U8G2_ROOT)/u8x8_u16toa.c \
   $(U8G2_ROOT)/u8x8_u8toa.c \
-  $(U8G2_ROOT)/u8x8_d_ssd1306_128x64_noname.c
+  $(U8G2_ROOT)/u8x8_d_ssd1306_128x64_noname.c \
+  $(PROJ_DIR)/dict_attack.c \
+  $(PROJ_DIR)/dict_generator.c \
+  $(PROJ_DIR)/keygen_wrapper.c
 
 # Include folders common to all targets
 INC_FOLDERS += \
@@ -643,6 +646,7 @@ CFLAGS += -DNDEBUG
 CFLAGS += -DU8G2_USE_LARGE_FONTS
 endif
 CFLAGS += -DMBEDTLS_CONFIG_FILE=\"nrf_crypto_mbedtls_config.h\"
+CFLAGS += -DENABLE_DICT_ATTACK=1
 CFLAGS += -DM_USE_THREAD_BACKEND=0
 CFLAGS += -mcpu=cortex-m4
 CFLAGS += -mthumb -mabi=aapcs
