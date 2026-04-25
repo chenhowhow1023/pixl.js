@@ -5,7 +5,8 @@
             "includePath": [
                 "${workspaceFolder}/fw/application/src/**",
                 "${workspaceFolder}/fw/components/**",
-                "${NRF52_SDK_ROOT}/**"
+                "${NRF52_SDK_ROOT}/**",
+                "${workspaceFolder}"
             ],
             "forcedInclude": [
                 "${workspaceFolder}/fw/application/config/sdk_config.h"
@@ -24,10 +25,10 @@
                 "DEBUG_NRF",
                 "M_USE_THREAD_BACKEND=0"
             ],
-            "compilerPath": "/usr/local/bin/arm-none-eabi-gcc",
+            "compilerPath": "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.50.35717/bin/Hostx64/x64/cl.exe",
             "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "windows-gcc-arm"
+            "intelliSenseMode": "windows-msvc-x64"
         }
     ],
     "version": 4
